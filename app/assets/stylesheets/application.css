@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require jquery-ui
+ */
+body {
+background-color: lightgrey;
+}
+#masterdiv{
+  margin-left: 20%;
+  width: 75%;
+
+}
+a:hover {
+  color: lightgreen;
+}
+
+#linky :hover {
+    color: red;
+}
+.panel {
+max-width: 400px;
+text-align: center;
+display: inline-block;
+font-weight: bolder;
+width: 40%;
+
+
+}
+.panel-body{
+  text-align: center;
+  background-color: beige;
+  font-weight: normal;
+  color: black;
+}
+
+
+#linky{
+  float: right;
+  display: inline-block;
+}
+#editlink{
+  float: right;
+  padding-right: 10px;
+}
+.header{
+  text-align: center;
+}
+#newpost{
+  margin-left: 38%;
+}
+.masteredit{
+  margin-left: 40%;
+}
+#newcardpadding{
+  margin-bottom: 15px;
+}

@@ -1,0 +1,28 @@
+<head>
+  <script>
+  $( function() {
+    $( ".sortable" ).sortable();
+    $( ".sortable" ).disableSelection();
+  } );
+  </script>
+</head>
+
+<div class="header">
+<h1>Board</h1>
+<div id="newcardpadding"><%= link_to 'New card', new_card_path %></div>
+</div>
+
+<div id="masterdiv"class="sortable">
+  <% @cards.each do |card| %>
+      <div  class="panel panel-default">
+      <%= card.title %>
+      <div id="linky"><%= link_to 'x', card_path(card),
+              method: :delete,
+              data: { confirm: 'Are you sure?'} %></div>
+        <div id = "editlink"><%= link_to 'Edit', edit_card_path(card) %></div>
+      <div class = "panel-body"><%= card.text %></div>
+
+    </div>
+
+  <% end %>
+</div>
